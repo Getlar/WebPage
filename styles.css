@@ -1,6 +1,7 @@
+@charset "UTF-16";
 body{
   background-color: powderblue;
-  background-image: url('lol.jpg');
+  background-image: url('kepek/lol.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -69,4 +70,17 @@ li a:hover{
 }
 .egyosztaly{
   color:pink;
+}
+@@media screen and (max-width:800px) {
+  ul{
+    color: #dddddd;
+    border: 1px solid #dddddd;
+    text-align:center;
+    padding: 4px;
+    width: 100%;
+  }
+}
+
+.kilepo{
+  color:white;
 }
