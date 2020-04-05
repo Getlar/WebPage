@@ -1,5 +1,9 @@
 body{
   background-color: powderblue;
+  background-image: url('lol.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 h1{
   font-size: 60px;
@@ -13,13 +17,11 @@ p.Role{
   color:yellow;
 }
 a:link {
-  color: green;
-  background-color: transparent;
+  color: white;
   text-decoration: none;
 }
 a:visited {
-  color: green;
-  background-color: transparent;
+  color: white;
   text-decoration: none;
 }
 a:hover {
@@ -31,4 +33,40 @@ a:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th,td{
+  color: #dddddd;
+  border: 1px solid #dddddd;
+  text-align:center;
+  padding: 4px;
+}
+ul{
+  list-style-type: none;
+  margin 0;
+  padding: 0;
+  overflow: hidden;
+}
+li{
+  float: left;
+  width: 25%;
+}
+li a{
+  background-color: #000015;
+  border: 1px solid #000000;
+  display: block;
+  color: white;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #000000;
+}
+.egyosztaly{
+  color:pink;
 }
