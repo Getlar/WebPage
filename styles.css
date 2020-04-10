@@ -11,14 +11,39 @@ body{
 .sticky-top-wrapper{
   position: sticky;
   top: 0;
-  width: 19%;
-  margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo-img{
   opacity: 100%;
-  display: inline-block;
-  max-width: 100%;
-  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu-bar{
+  list-style-type: none;
+  top:0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li{
+  float: left;
+  width: 20%;
+}
+li a{
+  background-color: #000015;
+  border: 1px solid #000000;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #000000;
 }
 
 h1{
@@ -60,45 +85,21 @@ th,td{
   text-align:center;
   padding: 4px;
 }
-ul{
-  list-style-type: none;
-  margin 0;
-  padding: 0;
-  overflow: hidden;
-}
-li{
-  float: left;
-  width: 25%;
-}
-li a{
-  background-color: #000015;
-  border: 1px solid #000000;
-  display: block;
-  color: white;
-  height: 50px;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-}
-li a:hover{
-  background-color: #000000;
-}
+
+
+
+
+
 .egyosztaly{
   color:pink;
 }
 @media only screen and (max-width:800px) {
-  ul{
-    color: pink;
-    border: 1px solid #dddddd;
-    text-align:center;
-    padding: 4px;
-    width: 100%;
-  }
   .sticky-top-wrapper{
     position: sticky;
     top: 0;
     width: 50%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .logo-img{
     opacity: 100%;
