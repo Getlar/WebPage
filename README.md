@@ -1,2 +1,2 @@
 # WebPage
-Webes megoldások - Projektmunka
+Web Design - Project Alpha
