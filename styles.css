@@ -11,6 +11,7 @@ body{
   height: 125vh;
   font-family: sans-serif;
   margin-top: 80px;
+  overflow-x: hidden;
 }
 
 header{
@@ -184,6 +185,41 @@ header li #login:hover{
   display: block;
 }
 
+.roles .frunci{
+  margin-top: 20px;
+  height: 800px;
+  background-image: url('kepek/morde.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+}
+
+
+.roles .frunci .left-side{
+  margin-top: 100px;
+  float:left;
+  margin-left: 25%;
+  border: 2px solid #cdba87;
+  width: 25%;
+}
+.roles .frunci .right-side{
+  margin-top: 100px;
+  float:left;
+  border: 2px solid white;
+  width: 25%;
+}
+.roles .frunci .left-side h1{
+  border: 4px solid #cdba87;
+  font-family: "Calibri",sans-serif;
+  font-weight: lighter;
+  font-size: 60px;
+  text-transform: uppercase;
+  color:#cdba87;
+  text-shadow: 5px 5px 15px #24999A;
+  text-align: top left;
+  margin: 5px;
+  padding: 10px;
+}
 
 @media only screen and (max-width:800px) {
 
