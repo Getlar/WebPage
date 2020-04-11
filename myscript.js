@@ -1,19 +1,18 @@
-var w;
 
-function startWorker() {
-  if (typeof(Worker) !== "undefined") {
-    if (typeof(w) == "undefined") {
-      w = new Worker("myscript.js");
-    }
-    w.onmessage = function(event) {
-      document.getElementById("result").innerHTML = event.data;
-    };
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+    myBtn.style.display = "block";
   } else {
-    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+    myBtn.style.display = "none";
   }
 }
 
-function stopWorker() {
-  w.terminate();
-  w = undefined;
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
