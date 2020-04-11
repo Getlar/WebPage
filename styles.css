@@ -1,6 +1,6 @@
 @charset "UTF-16";
 body{
-  background-color: #3e4444;
+  background-color: #001017;
   /*background-image: url('kepek/bk.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -46,12 +46,8 @@ header li a{
 }
 header li a:hover{
    text-shadow: 5px 5px 5px black;
-   color:#E4D33F;
+   color:#cdba87;
 }
-
-
-
-
 
 
 header .dropdown li {
@@ -71,7 +67,7 @@ header .dropdown{
 header .dropdown-content{
   display: none;
   position:absolute;
-  background-color: rgb(0,16,23,0.8);
+  background-color: rgb(0,16,23,0.6);
   min-width: 100px;;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -79,6 +75,12 @@ header .dropdown-content{
 header .dropdown-content a{
   float: none;
   padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid black;
+  border-top: 0px;
+  font-family: "Calibri",sans-serif;
+  font-size: 15px;
   padding-left: 0px;
   padding-right: 20px;
   text-decoration: none;
@@ -90,21 +92,40 @@ header .dropdown:hover{
 }
 header .dropdown li:hover{
   text-shadow: 5px 5px 5px black;
-  color:#E4D33F;
+  color:#cdba87;
 }
 
 header .dropdown:hover .dropdown-content{
   display:inline-grid;
 }
+header .dropdown .dropdown-content a:hover{
+  text-shadow: 3px 3px 3px black;
+  color:#cdba87;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
-
+header .dropdown .dropdown-content #insta:hover{
+  text-shadow: 3px 3px 3px black;
+  color:#cf4667;
+}
+header .dropdown .dropdown-content #face:hover{
+  text-shadow: 3px 3px 3px black;
+  color:#4267b2;
+}
+header .dropdown .dropdown-content #github:hover{
+  text-shadow: 3px 3px 3px black;
+  color:white;
+}
+header li #login:hover{
+  color:white;
+}
 
 
 .wrapper{
   background-image: url('kepek/bek.png');
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: auto;
 }
 .szoveg{
   margin-top: 40px;
@@ -125,7 +146,43 @@ header .dropdown:hover .dropdown-content{
   font-size: 50px;
   letter-spacing: 5px;
 }
-
+.intro{
+  padding-top: 270px;
+  padding-left: 300px;
+  padding-right: 300px;
+  text-align: center;
+  color:white;
+  font-family: "Calibri",sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+.roles{
+  margin-top: -20px;
+  padding-top: 0px;
+  text-align: center;
+}
+.roles p{
+  color:#cdba87;
+  text-transform: uppercase;
+  font-family: "Calibri",sans-serif;
+  font-weight: lighter;
+  font-size: 75px;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+.separator{
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.sumicon{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 
 @media only screen and (max-width:800px) {
