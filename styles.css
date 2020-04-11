@@ -170,8 +170,9 @@ header li #login:hover{
   font-family: "Calibri",sans-serif;
   font-weight: lighter;
   font-size: 75px;
-  letter-spacing: 10px;
+  letter-spacing: 20px;
   margin-bottom: 20px;
+  text-shadow: 1px 0px 75px 32px rgba(0,0,0,0.75);
 }
 .separator{
   padding-top: 50px;
@@ -199,14 +200,16 @@ header li #login:hover{
   margin-top: 100px;
   float:left;
   margin-left: 25%;
-  border: 2px solid #cdba87;
+  border: 2px solid #69be8f;
   width: 25%;
+  box-shadow: 1px 0px 75px 32px rgba(0,0,0,0.75);
 }
 .roles .frunci .right-side{
   margin-top: 100px;
   float:left;
-  border: 2px solid white;
+  border: 2px solid #69be8f;
   width: 25%;
+  box-shadow: 1px 0px 75px 32px rgba(0,0,0,0.75);
 }
 .roles .frunci .left-side h1{
   border: 4px solid #cdba87;
@@ -215,12 +218,31 @@ header li #login:hover{
   font-size: 60px;
   text-transform: uppercase;
   color:#cdba87;
-  text-shadow: 5px 5px 15px #24999A;
+  text-shadow: 5px 5px 15px black;
   text-align: top left;
   margin: 5px;
   padding: 10px;
+  box-shadow: 1px 0px 75px 32px rgba(0,0,0,0.75);
 }
-
+.roles .frunci .right-side .szerep p{
+  font-family: "Calibri",sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color:#cdba87;
+  text-shadow: 5px 5px 15px black;
+  margin: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  box-shadow: 1px 0px 75px 32px rgba(0,0,0,0.75);
+}
+.roles .frunci .right-side .szerep{
+  border: 4px solid #cdba87;
+  text-align: left;
+  padding-left: 5px;
+  box-shadow: 1px 0px 75px 32px rgba(0,0,0,0.75);
+}
 @media only screen and (max-width:800px) {
 
 }
