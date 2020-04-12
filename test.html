@@ -5,10 +5,35 @@
   <meta charset="UTF-16"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Takacs Tamas"/>
-  <meta http-equiv="refresh" content="30"/>
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700" rel="stylesheet">
   <script src="myscript.js"></script>
+  <script>
+  function kiertekelo(){
+         var fnatic1 = parseInt(document.querySelector('input[name = "vb"]:checked').value);
+    	   var dk1 = parseInt(document.querySelector('input[name = "kupa"]:checked').value);
+    	   var sktt1 = parseInt(document.querySelector('input[name = "kupa2"]:checked').value);
+    	   var alex1 = parseInt(document.querySelector('input[name = "bd"]:checked').value);
+         var usa2 = parseInt(document.querySelector('input[name = "vb2"]:checked').value);
+    	   var brand1 = parseInt(document.querySelector('input[name = "elso"]:checked').value);
+    	   var kayle1 = parseInt(document.querySelector('input[name = "rew"]:checked').value);
+    	   var season41 = parseInt(document.querySelector('input[name = "rh"]:checked').value);
+         var g2014 = parseInt(document.querySelector('input[name = "cigi"]:checked').value);
+    	   var season62 = parseInt(document.querySelector('input[name = "ui"]:checked').value);
+    	   var masteryi1 = parseInt(document.querySelector('input[name = "tamas"]:checked').value);
+    	   var norbi1 = parseInt(document.querySelector('input[name = "norbi"]:checked').value);
+         var kristof2 = parseInt(document.querySelector('input[name = "kristof"]:checked').value);
+    	   var fiddle1 = parseInt(document.querySelector('input[name = "anna"]:checked').value);
+    	   var illaoi1 = parseInt(document.querySelector('input[name = "frunci"]:checked').value);
+
+
+    	   var result = fnatic1 + dk1 + sktt1 + alex1 + usa2 + brand1 + katyle1 + season41 + g2014 + season62 + masteryi1 + norbi1 + kristof2 + fiddle1 + illaoi1;
+
+    	document.getElementById("grade").innerHTML = result;
+      window.location.href = "index.html";
+    return false; // required to not refresh the page; just leave this here
+    }
+  </script>
 </head>
 <body id="testbody">
   <button onclick="topFunction()" id="myBtn" title="Go to top">Oldal Teteje</button>
@@ -34,103 +59,102 @@
         </div>
     </div>
     <div class="form">
-        <form action="/valasz.php" id="mainform">
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+        <form id="aforma">
+          <h2>Ki nyerte az első világbajnokágot?</h2>
+          <label for="var_fnatic1"><br><br><input type="radio" name="vb" value="25" id="var_fnatic1"/>Fnatic</label>
+          <label for="var_tsm1"><br><br><input type="radio" name="vb" value="0" id="var_tsm1"/>Team Solo Mid</label>
+          <label for="var_aaa1"><br><br><input type="radio" name="vb" value="0" id="var_aaa1"/>All Against Authority</label>
+          <label for="var_clg1"><br><br><input type="radio" name="vb" value="0" id="var_clg1"/>Counter Logic Gaming</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Melyik régió rendelkezik a legtöbb kupával?</h2>
+          <label for="var_dk1"><br><br><input type="radio" name="kupa" value="25" id="var_dk1"/>Dél-Korea</label>
+          <label for="var_k1"><br><br><input type="radio" name="kupa" value="0" id="var_k1"/>Kina</label>
+          <label for="var_eu1"><br><br><input type="radio" name="kupa" value="0" id="var_eu1"/>Európa</label>
+          <label for="var_usa1"><br><br><input type="radio" name="kupa" value="0" id="var_usa1"/>USA</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Melyik csapatnak van a legtöbb megszerzett világbajnoki kupája?</h2>
+          <label for="var_sktt11"><br><br><input type="radio" name="kupa2" value="25" id="var_sktt11"/>SKT T1</label>
+          <label for="var_rng1"><br><br><input type="radio" name="kupa2" value="0" id="var_rng1"/>RNG</label>
+          <label for="var_fnatic2"><br><br><input type="radio" name="kupa2" value="0" id="var_fnatic2"/>Fnactic</label>
+          <label for="var_sgw1"><br><br><input type="radio" name="kupa2" value="0" id="var_sgw1"/>Samsung Galaxy White</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Az IEM Katowice 2013 versenyen ki hajtotta végre a legendás backdoort?</h2>
+          <label for="var_xpeke1"><br><br><input type="radio" name="bd" value="0" id="var_xpeke1"/>xPeke</label>
+          <label for="var_ocelote1"><br><br><input type="radio" name="bd" value="0" id="var_ocelote1"/>ocelote</label>
+          <label for="var_cyanide1"><br><br><input type="radio" name="bd" value="0" id="var_cyanide1"/>Cyanide</label>
+          <label for="var_alex1"><br><br><input type="radio" name="bd" value="25" id="var_alex1"/>Alex Ich</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Melyik az az egyetlen Major League-es régió amelyik egyszer sem ért el első vagy második helyet világbajnokságon?</h2>
+          <label for="var_usa2"><br><br><input type="radio" name="vb2" value="25" id="var_usa2"/>USA</label>
+          <label for="var_eu2"><br><br><input type="radio" name="vb2" value="0" id="var_eu2"/>Európa</label>
+          <label for="var_k2"><br><br><input type="radio" name="vb2" value="0" id="var_k2"/>Kina</label>
+          <label for="var_taiwan1"><br><br><input type="radio" name="vb2" value="0" id="var_taiwan1"/>Taiwan</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Ki nem tartozik az először kiadott hősök közé?</h2>
+          <label for="var_Heimer1"><br><br><input type="radio" name="elso" value="0" id="var_Heimer1"/>Heimerdinger</label>
+          <label for="var_Twitch1"><br><br><input type="radio" name="elso" value="0" id="var_Twitch1"/>Twitch</label>
+          <label for="var_Brand1"><br><br><input type="radio" name="elso" value="25" id="var_Brand1"/>Brand</label>
+          <label for="var_Janna1"><br><br><input type="radio" name="elso" value="0" id="var_Janna1"/>Janna</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Ki kapta az első rework-ot?</h2>
+          <label for="var_Kayle1"><br><br><input type="radio" name="rew" value="25" id="var_Kayle1"/>Kayle</label>
+          <label for="var_Karma1"><br><br><input type="radio" name="rew" value="0" id="var_Karma1"/>Karma</label>
+          <label for="var_Katarina1"><br><br><input type="radio" name="rew" value="0" id="var_Katarina1"/>Katarina</label>
+          <label for="var_Trynda1"><br><br><input type="radio" name="rew" value="0" id="var_Trynda1"/>Tryndamere</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Melyik szezonba került be a Rift Herald?</h2>
+          <label for="var_Season71"><br><br><input type="radio" name="rh" value="0" id="var_Season71"/>Season 7</label>
+          <label for="var_Season51"><br><br><input type="radio" name="rh" value="0" id="var_Season51"/>Season 5</label>
+          <label for="var_Season41"><br><br><input type="radio" name="rh" value="25" id="var_Season41"/>Season 4</label>
+          <label for="var_Season61"><br><br><input type="radio" name="rh" value="0" id="var_Season61"/>Season 6</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Mikor vesztette el Graves a cigarettáját?</h2>
+          <label for="var_2013g"><br><br><input type="radio" name="cigi" value="0" id="var_2013g"/>2013</label>
+          <label for="var_2014g"><br><br><input type="radio" name="cigi" value="25" id="var_2014g"/>2014</label>
+          <label for="var_2016g"><br><br><input type="radio" name="cigi" value="0" id="var_2016g"/>2016</label>
+          <label for="var_2017g"><br><br><input type="radio" name="cigi" value="0" id="var_2017g"/>2017</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Melyik szezonbe került be az új stat és health bar interface?</h2>
+          <label for="var_Season62"><br><br><input type="radio" name="ui" value="25" id="var_Season62"/>Season 6</label>
+          <label for="var_Season42"><br><br><input type="radio" name="ui" value="0" id="var_Season42"/>Season 4</label>
+          <label for="var_Season32"><br><br><input type="radio" name="ui" value="0" id="var_Season32"/>Season 3</label>
+          <label for="var_Season52"><br><br><input type="radio" name="ui" value="0" id="var_Season52"/>Season 5</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Ki volt Azahuascae első hőse?</h2>
+          <label for="var_Leesin1"><br><br><input type="radio" name="tamas" value="0" id="var_Leesin1"/>Lee Sin</label>
+          <label for="var_Teemo1"><br><br><input type="radio" name="tamas" value="0" id="var_Teemo1"/>Teemo</label>
+          <label for="var_Pantheon1"><br><br><input type="radio" name="tamas" value="0" id="var_Pantheon1"/>Pantheon</label>
+          <label for="var_Masteryi1"><br><br><input type="radio" name="tamas" value="25" id="var_Masteryi1"/>Master Yi</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Ki játszott először a játékkal?</h2>
+          <label for="var_norbi1"><br><br><input type="radio" name="norbi" value="25" id="var_norbi1"/>xHypeR</label>
+          <label for="var_tamas1"><br><br><input type="radio" name="norbi" value="0" id="var_tamas1"/>Ayahuascae</label>
+          <label for="var_frunci1"><br><br><input type="radio" name="norbi" value="0" id="var_frunci1"/>frunci</label>
+          <label for="var_kristof1"><br><br><input type="radio" name="norbi" value="0" id="var_kristof1"/>MakeThemBounce</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Ki unja meg hetente a játékot?</h2>
+          <label for="var_kristof2"><br><br><input type="radio" name="kristof" value="25" id="var_kristof2"/>MakeThemBounce</label>
+          <label for="var_norbi2"><br><br><input type="radio" name="kristof" value="0" id="var_norbi2"/>xHypeR</label>
+          <label for="var_frunci2"><br><br><input type="radio" name="kristof" value="0" id="var_frunci2"/>frunci</label>
+          <label for="var_anna1"><br><br><input type="radio" name="kristof" value="0" id="var_anna1"/>Rampataka</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Kivel pentázott először Rampataka?</h2>
+          <label for="var_irelia1"><br><br><input type="radio" name="anna" value="0" id="var_irelia1"/>Irelia</label>
+          <label for="var_ahri1"><br><br><input type="radio" name="anna" value="0" id="var_ahri1"/>Ahri</label>
+          <label for="var_fiddle1"><br><br><input type="radio" name="anna" value="25" id="var_fiddle1"/>Fiddlesticks</label>
+          <label for="var_annie1"><br><br><input type="radio" name="anna" value="0" id="var_annie1"/>Annie</label>
           <br><br>
-          <h2>Ki az apu?</h2>
-          <label for="var_szomi"><br><br><input type="radio" name="variable" value="0" id="var_szomi"/>Szomorusag</label>
-          <label for="var_siet"><br><br><input type="radio" name="variable" value="0" id="var_siet"/>Sietseg</label>
-          <label for="var_oszint"><br><br><input type="radio" name="variable" value="25" id="var_oszint"/>Oszinteseg</label>
-          <label for="var_ridik"><br><br><input type="radio" name="variable" value="0" id="var_ridik"/>Ridikul</label>
+          <h2>Kit bannolt frunci egy egész éven át topon?</h2>
+          <label for="var_darius1"><br><br><input type="radio" name="frunci" value="0" id="var_darius1"/>Darius</label>
+          <label for="var_illaoi1"><br><br><input type="radio" name="frunci" value="25" id="var_illaoi1"/>Illaoi</label>
+          <label for="var_teemo2"><br><br><input type="radio" name="frunci" value="0" id="var_teemo2"/>Teemo</label>
+          <label for="var_garen1"><br><br><input type="radio" name="frunci" value="0" id="var_garen1"/>Garen</label>
           <br><br>
-          <button type="submit" value="Submit">Submit</button>
-          <p>Your grade is: <span id="grade">__</span></p>
-          <p id="grade2"></p>
+          <button type="submit" value="submit">Submit</button>
+          <p>Eredményed: <span id="grade">__</span></p>
     </div>
   </main>
-  <footer>
+  <footer style="color:black">
     Takács Tamás&copy; - 2020.04.11. - First WebPage
   </footer>
 
