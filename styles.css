@@ -643,7 +643,7 @@ h1.deepshadow {
 #testbody main{
   margin-left: 20%;
   margin-right: 20%;
-  height: 4600px;
+  height: 4650px;
   border: 2px solid white;
   margin-top: 100px;
   margin-bottom: 50px;
@@ -748,6 +748,7 @@ h1.deepshadow {
 .form{
   text-align: left;
   padding-left: 30px;
+  padding-right: 30px;
   padding-top: 30px;
 }
 

@@ -8,32 +8,6 @@
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700" rel="stylesheet">
   <script src="myscript.js"></script>
-  <script>
-  function kiertekelo(){
-         var fnatic1 = parseInt(document.querySelector('input[name = "vb"]:checked').value);
-    	   var dk1 = parseInt(document.querySelector('input[name = "kupa"]:checked').value);
-    	   var sktt1 = parseInt(document.querySelector('input[name = "kupa2"]:checked').value);
-    	   var alex1 = parseInt(document.querySelector('input[name = "bd"]:checked').value);
-         var usa2 = parseInt(document.querySelector('input[name = "vb2"]:checked').value);
-    	   var brand1 = parseInt(document.querySelector('input[name = "elso"]:checked').value);
-    	   var kayle1 = parseInt(document.querySelector('input[name = "rew"]:checked').value);
-    	   var season41 = parseInt(document.querySelector('input[name = "rh"]:checked').value);
-         var g2014 = parseInt(document.querySelector('input[name = "cigi"]:checked').value);
-    	   var season62 = parseInt(document.querySelector('input[name = "ui"]:checked').value);
-    	   var masteryi1 = parseInt(document.querySelector('input[name = "tamas"]:checked').value);
-    	   var norbi1 = parseInt(document.querySelector('input[name = "norbi"]:checked').value);
-         var kristof2 = parseInt(document.querySelector('input[name = "kristof"]:checked').value);
-    	   var fiddle1 = parseInt(document.querySelector('input[name = "anna"]:checked').value);
-    	   var illaoi1 = parseInt(document.querySelector('input[name = "frunci"]:checked').value);
-
-
-    	   var result = fnatic1 + dk1 + sktt1 + alex1 + usa2 + brand1 + katyle1 + season41 + g2014 + season62 + masteryi1 + norbi1 + kristof2 + fiddle1 + illaoi1;
-
-    	document.getElementById("grade").innerHTML = result;
-      window.location.href = "index.html";
-    return false; // required to not refresh the page; just leave this here
-    }
-  </script>
 </head>
 <body id="testbody">
   <button onclick="topFunction()" id="myBtn" title="Go to top">Oldal Teteje</button>
@@ -45,7 +19,7 @@
       <h1 class="deepshadow"><span style="color:#69be8f;">Q</span><span style="color:#cdba87">u</span><span style="color:#69be8f;">i</span><span style="color:#cdba87;">z</span></h1>
     </div>
     <div class="restart">
-      <button class="btn draw-border" id="rb" type="reset" name="resetbutton">Újrapróbálás</button>
+      <button class="btn draw-border" id="rb" type="reset" name="resetbutton" onclick="reset()">Újrapróbálás</button>
     </div>
   </header>
   <main>
@@ -59,7 +33,8 @@
         </div>
     </div>
     <div class="form">
-        <form id="aforma">
+        <form id="aforma" onsubmit="kiErtekelo()" method="post">
+          <p style="color:white" id="parag"></p>
           <h2>Ki nyerte az első világbajnokágot?</h2>
           <label for="var_fnatic1"><br><br><input type="radio" name="vb" value="25" id="var_fnatic1"/>Fnatic</label>
           <label for="var_tsm1"><br><br><input type="radio" name="vb" value="0" id="var_tsm1"/>Team Solo Mid</label>
@@ -150,8 +125,7 @@
           <label for="var_teemo2"><br><br><input type="radio" name="frunci" value="0" id="var_teemo2"/>Teemo</label>
           <label for="var_garen1"><br><br><input type="radio" name="frunci" value="0" id="var_garen1"/>Garen</label>
           <br><br>
-          <button type="submit" value="submit">Submit</button>
-          <p>Eredményed: <span id="grade">__</span></p>
+          <button style="width:100%;" class="btn draw-border" type="submit" value="submit">Submit</button>
     </div>
   </main>
   <footer style="color:black">
